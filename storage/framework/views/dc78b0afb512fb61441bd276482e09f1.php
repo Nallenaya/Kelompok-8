@@ -143,8 +143,8 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Layanan Desa</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/kk">Pembuatan KTP</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/ktp">Pembuatan Kartu Keluarga</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/ktp">Pembuatan KTP</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/kk">Pembuatan Kartu Keluarga</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="/aktekelahiran">Pembuatan Akte Kelahiran</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="/aktekematian">Pembuatan Akte Kematian</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="/pindahdomisili">Prosedur Pindah Domisili</a></li>
