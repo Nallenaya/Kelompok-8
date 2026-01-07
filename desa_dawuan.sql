@@ -1,14 +1,16 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
+-- --------------------------------------------------------
+
 --
--- Database: `desa_dawuan`
+-- Basis data: `desa_dawuan`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `data`
+-- Struktur dari tabel `data`
 --
 
 CREATE TABLE `data` (
@@ -21,7 +23,7 @@ CREATE TABLE `data` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `data`
+-- Dumping data untuk tabel `data`
 --
 
 INSERT INTO `data` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
@@ -33,7 +35,7 @@ INSERT INTO `data` (`id`, `title`, `description`, `image`, `created_at`, `update
 -- --------------------------------------------------------
 
 --
--- Table structure for table `events`
+-- Struktur dari tabel `events`
 --
 
 CREATE TABLE `events` (
@@ -46,17 +48,17 @@ CREATE TABLE `events` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `events`
+-- Dumping data untuk tabel `events`
 --
 
 INSERT INTO `events` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
 (1, 'Rapat Tahun Baru', 'Tasyakuran bersama warga dawuan untuk mempererat silaturahm', 'galeri d1.jpg', '2022-12-21 05:53:48', '2026-01-06 15:55:53'),
-(2, 'Sepeda santai', 'Penyambung keharmonisan desa kedawung dengan menjag kesehatan', 'galeri d3.jpg', '2022-12-21 06:04:19', '2026-01-06 15:57:41');
+(2, 'Musyawarah Desa', 'Penyambung keharmonisan desa kedawung dengan menjaga kesehatan', 'galeri d3.jpg', '2022-12-21 06:04:19', '2026-01-06 21:35:20');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `failed_jobs`
+-- Struktur dari tabel `failed_jobs`
 --
 
 CREATE TABLE `failed_jobs` (
@@ -72,7 +74,7 @@ CREATE TABLE `failed_jobs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `galeris`
+-- Struktur dari tabel `galeris`
 --
 
 CREATE TABLE `galeris` (
@@ -83,7 +85,7 @@ CREATE TABLE `galeris` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `galeris`
+-- Dumping data untuk tabel `galeris`
 --
 
 INSERT INTO `galeris` (`id`, `image`, `created_at`, `updated_at`) VALUES
@@ -96,7 +98,7 @@ INSERT INTO `galeris` (`id`, `image`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
+-- Struktur dari tabel `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -106,7 +108,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `migrations`
+-- Dumping data untuk tabel `migrations`
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -128,7 +130,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `news`
+-- Struktur dari tabel `news`
 --
 
 CREATE TABLE `news` (
@@ -141,7 +143,7 @@ CREATE TABLE `news` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `news`
+-- Dumping data untuk tabel `news`
 --
 
 INSERT INTO `news` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
@@ -151,7 +153,7 @@ INSERT INTO `news` (`id`, `title`, `description`, `image`, `created_at`, `update
 -- --------------------------------------------------------
 
 --
--- Table structure for table `password_resets`
+-- Struktur dari tabel `password_resets`
 --
 
 CREATE TABLE `password_resets` (
@@ -163,7 +165,7 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `perangkats`
+-- Struktur dari tabel `perangkats`
 --
 
 CREATE TABLE `perangkats` (
@@ -176,19 +178,19 @@ CREATE TABLE `perangkats` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `perangkats`
+-- Dumping data untuk tabel `perangkats`
 --
 
 INSERT INTO `perangkats` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
 (1, 'Kepala Desa', 'Abdul Rohman Baehaqi S.Sy', 'user.jpg.jpg', '2022-12-21 04:11:07', '2026-01-06 15:16:49'),
 (2, 'Wakil Kepala Desa', 'Usep Saepudin', 'user.jpg.jpg', '2022-12-21 04:11:46', '2026-01-06 15:17:48'),
-(3, 'ANONIM', 'Bendahara', 'user.jpg.jpg', '2022-12-21 04:13:25', '2026-01-06 15:17:59'),
-(4, 'ANONIM', 'Sekretaris', 'user.jpg.jpg', '2022-12-21 04:13:51', '2026-01-06 15:18:12');
+(3, 'Bendahara', 'Anonim', 'user.jpg.jpg', '2022-12-21 04:13:25', '2026-01-06 21:32:31'),
+(4, 'Sekertaris', 'Anonim', 'user.jpg.jpg', '2022-12-21 04:13:51', '2026-01-06 21:32:45');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `personal_access_tokens`
+-- Struktur dari tabel `personal_access_tokens`
 --
 
 CREATE TABLE `personal_access_tokens` (
@@ -207,7 +209,7 @@ CREATE TABLE `personal_access_tokens` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sambutans`
+-- Struktur dari tabel `sambutans`
 --
 
 CREATE TABLE `sambutans` (
@@ -220,7 +222,7 @@ CREATE TABLE `sambutans` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `sambutans`
+-- Dumping data untuk tabel `sambutans`
 --
 
 INSERT INTO `sambutans` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
@@ -229,7 +231,7 @@ INSERT INTO `sambutans` (`id`, `title`, `description`, `image`, `created_at`, `u
 -- --------------------------------------------------------
 
 --
--- Table structure for table `services`
+-- Struktur dari tabel `services`
 --
 
 CREATE TABLE `services` (
@@ -242,7 +244,7 @@ CREATE TABLE `services` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `services`
+-- Dumping data untuk tabel `services`
 --
 
 INSERT INTO `services` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
@@ -256,7 +258,7 @@ INSERT INTO `services` (`id`, `title`, `description`, `image`, `created_at`, `up
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sliders`
+-- Struktur dari tabel `sliders`
 --
 
 CREATE TABLE `sliders` (
@@ -269,19 +271,19 @@ CREATE TABLE `sliders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `sliders`
+-- Dumping data untuk tabel `sliders`
 --
 
 INSERT INTO `sliders` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Slider 1', 'Gunung dan Sawah', 'slide1-01.jpg', '2022-12-21 04:05:21', '2026-01-06 15:21:43'),
-(2, 'Slider 2', 'Balap Kuda', 'slide2-01.jpg', '2022-12-21 04:44:07', '2026-01-06 15:21:24'),
-(3, 'Slider 3', 'Tasyakuran desa dawuan', 'galeri d1.jpg', '2022-12-21 04:59:02', '2026-01-06 16:11:08'),
-(4, 'Slider 4', 'Lomba Catur', 'slide4-01.jpg', '2022-12-21 04:59:28', '2026-01-06 15:43:22');
+(1, 'Pemandangan Alam', 'Gunung dan Sawah', 'slide1-01.jpg', '2022-12-21 04:05:21', '2026-01-06 21:31:02'),
+(2, 'Kegiatan', 'Balap Kuda', 'slide2-01.jpg', '2022-12-21 04:44:07', '2026-01-06 21:31:40'),
+(3, 'Acara', 'Tasyakuran desa dawuan', 'galeri d1.jpg', '2022-12-21 04:59:02', '2026-01-06 21:31:33'),
+(4, 'Lomba', 'Lomba Catur', 'slide4-01.jpg', '2022-12-21 04:59:28', '2026-01-06 21:31:49');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `testimonis`
+-- Struktur dari tabel `testimonis`
 --
 
 CREATE TABLE `testimonis` (
@@ -293,17 +295,10 @@ CREATE TABLE `testimonis` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `testimonis`
---
-
-INSERT INTO `testimonis` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'yqqvde', 'qdbeq', 'Screenshot 2026-01-02 151744.png', '2026-01-03 20:19:26', '2026-01-03 20:19:26');
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `umkms`
+-- Struktur dari tabel `umkms`
 --
 
 CREATE TABLE `umkms` (
@@ -316,7 +311,7 @@ CREATE TABLE `umkms` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `umkms`
+-- Dumping data untuk tabel `umkms`
 --
 
 INSERT INTO `umkms` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
@@ -325,27 +320,27 @@ INSERT INTO `umkms` (`id`, `title`, `description`, `image`, `created_at`, `updat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
   `id` bigint UNSIGNED NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `level` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `level` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `remember_token` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `level`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(6, 'dawuhan', 'superadmin', 'dawuhan@gmail.com', NULL, '$2y$10$mjXY55ieKkBPTQejtt3MZu0eDSno1dczJI2Hz6HHSlVm2IxZM//Re', 'eEkflOfHkDpaipqwR6YgBwUVIJaiajVIoR1ZOMBKFzHh4P7EmSxV1XouIk8E', '2022-12-19 20:15:29', '2026-01-05 02:45:45'),
+(6, 'dawuhan', 'superadmin', 'dawuhan@gmail.com', NULL, '$2y$10$mjXY55ieKkBPTQejtt3MZu0eDSno1dczJI2Hz6HHSlVm2IxZM//Re', 'FERTWYQOKUt6xaSKZBAzk5Viwywl0DK4mP8toL76WozMMqElrrenJiZmAJQ6', '2022-12-19 20:15:29', '2026-01-05 02:45:45'),
 (7, 'Nabila Dwi Paramita', 'admin', 'bila@gmail.com', NULL, '$2y$10$/6qXVTv0La96D5LKYrsYdOTzTGsB4upnwx/gi55tZ4AkUe3QhDEpW', '6ix3OFLDUOuAfX6TgfKROHilLIroYOf3oUk5IQjpEmBpgs52zc7ylqjvTiIk', '2022-12-20 07:56:16', '2022-12-20 07:56:16'),
 (8, 'Kurnia Nur Aisyah', 'admin', 'aisyah@gmail.com', NULL, '$2y$10$H0bA4JdNGkNwt4My4psJ.ejP0/qLGEllOwul.bfzEJst/lR11CfYu', 'orDSP8hY2YZL1clY34FVN2SAcwjzGsMIkefB42tKvhUmV8W3XgE3nrQEWsmS', '2022-12-20 07:58:19', '2022-12-20 07:58:19'),
 (9, 'David Kurniawan', 'admin', 'david@gmail.com', NULL, '$2y$10$jfqvZREslxiJt4VUlBsfhe/VIUqJQJNkJT/QUll4I8dD5d9.NLn5m', 'MBBuxDI7QNZlOxfrnzP3gVaDAorshau5uWc4pEkpbVQGXhWCuGZ4OCVLJe9Z', '2022-12-20 07:59:04', '2022-12-20 07:59:04'),
@@ -353,28 +348,29 @@ INSERT INTO `users` (`id`, `name`, `level`, `email`, `email_verified_at`, `passw
 (12, 'Nallenaya Ilham Putra', 'admin', 'nalle@gmail.com', NULL, '$2y$10$ZIDz.vcWR0FYyzA630UK2Og0Wa7W/O/IcKsXgaWxFAse1wK/k7Yju', 'NcxnOQgZ5nwu3nooTEnoCF0Qhra9I8cayYMy9WztxHMd3KsnSZ7PjuoMv9j1', '2022-12-20 08:03:09', '2026-01-06 07:36:52'),
 (15, 'ingga', 'admin', 'ingga@hahahah.vom', NULL, '$2y$10$K48R7ZvWWj6rjqwxCuHkquljCzE.MHbm0Ve8NpHMD8MnAwNTXtsYm', NULL, '2026-01-04 03:22:13', '2026-01-04 03:22:13'),
 (16, 'adminingga', 'superadmin', 'adminingga@gmail.fuk', NULL, '$2y$10$/Nl4x0/TXLuGZteXpoZ/n.44v9QYwcJqqTciyANMGQPLFUB3Gp3Rq', NULL, '2026-01-04 03:45:38', '2026-01-04 03:45:38'),
-(17, 'Iqbal Maulana', 'admin', 'iqbal@gmail.com', NULL, '$2y$10$AEDek9N09K9Tf3/J6sxhzeSFz8qC3d34gHtUTCWjqV56Hu1AaIdA2', 'ewsFQ1ZlhhYGSbc8Pt1Ap7QHs29nw8pkCkJZgVKoRErAUWl2VpMmvJAWwPke', '2022-12-20 08:03:09', '2026-01-06 07:36:52');
+(17, 'Iqbal Maulana', 'admin', 'iqbal@gmail.com', NULL, '$2y$10$AEDek9N09K9Tf3/J6sxhzeSFz8qC3d34gHtUTCWjqV56Hu1AaIdA2', 'ewsFQ1ZlhhYGSbc8Pt1Ap7QHs29nw8pkCkJZgVKoRErAUWl2VpMmvJAWwPke', '2022-12-20 08:03:09', '2026-01-06 07:36:52'),
+(18, 'naya', 'admin', 'naya@gmail.com', NULL, '$2y$10$rhm7sOB8435OfTW8/oV9.ecqkMm7JDAdVS2qgFZ2ze65G94ais.Z6', NULL, '2026-01-06 21:41:37', '2026-01-06 21:41:37');
 
 --
--- Indexes for dumped tables
+-- Indeks untuk tabel yang dibuang
 --
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
